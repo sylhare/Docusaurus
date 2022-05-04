@@ -15,6 +15,7 @@ npm install --save-dev typescript @docusaurus/module-type-aliases @tsconfig/docu
 npm install --save @docusaurus/plugin-content-blog
 npm install --save @docusaurus/plugin-content-docs
 npm install --save @docusaurus/theme-live-codeblock
+npm install --save docusaurus-lunr-search # search
 
 # Swizzle
 npm run swizzle @docusaurus/theme-classic -- --typescript

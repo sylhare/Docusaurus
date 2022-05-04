@@ -38,12 +38,15 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    require.resolve('docusaurus-lunr-search'),
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'My Site',
+        title: 'Docusaurus!',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
