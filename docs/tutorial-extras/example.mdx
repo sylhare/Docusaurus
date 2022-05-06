@@ -1,0 +1,93 @@
+---
+position: 3
+---
+
+# Examples
+
+## Custom component
+
+import Hello from "../../src/components/Hello";
+
+<Hello name={"world"}/>
+
+- ☝️ This component is displayed using:
+
+```js
+import Hello from "../../src/components/Hello";
+<Hello name={"world"}/>
+```
+
+## Live coding
+
+```jsx live
+function Clock(props) {
+  const [date, setDate] = useState(new Date());
+  useEffect(() => {
+    var timerID = setInterval(() => tick(), 1000);
+
+    return function cleanup() {
+      clearInterval(timerID);
+    };
+  });
+
+  function tick() {
+    setDate(new Date());
+  }
+
+  return (
+    <div>
+      <h2>It is {date.toLocaleTimeString()}.</h2>
+    </div>
+  );
+}
+```
+
+## Out of the box features
+
+
+:::info
+
+This is pretty cool
+
+:::
+
+And some tabs!
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="text" label="Example">
+
+    This is an example tag
+
+  </TabItem>
+  <TabItem value="js" label="JavaScript">
+
+    ```js
+    function helloWorld() {
+      console.log('Hello, world!');
+    }
+    ```
+
+  </TabItem>
+  <TabItem value="py" label="Python">
+
+    ```python
+    def hello_world():
+       print("Hello, world!")
+    ```
+
+  </TabItem>
+  <TabItem value="java" label="Java">
+
+    ```java
+    class HelloWorld {
+      public static void main(String args[]) {
+        System.out.println("Hello, World");
+      }
+    }
+    ```
+
+  </TabItem>
+</Tabs>
