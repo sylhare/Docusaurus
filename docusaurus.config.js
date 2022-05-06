@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const path = require("path");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -13,8 +14,8 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'sylhare', // Usually your GitHub org/user name.
+  projectName: 'Docusaurus', // Usually your repo name.
 
   presets: [
     [
@@ -23,23 +24,27 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/sylhare/Docusaurus/tree/main/',
+          exclude: ['path/to/exclude'],
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/sylhare/Docusaurus/tree/main/',
         },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
+        theme: { customCss: require.resolve('./src/css/custom.css') },
       }),
     ],
   ],
+  themes: [
+    '@docusaurus/theme-live-codeblock'
+  ],
   plugins: [
     require.resolve('docusaurus-lunr-search'),
+    path.resolve(__dirname, 'src', 'plugins', 'friend'),
   ],
 
   themeConfig:
@@ -59,6 +64,7 @@ const config = {
             label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/friends', label: 'Friends', position: 'right'},
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -114,6 +120,7 @@ const config = {
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['java', 'yaml', 'python'],
       },
     }),
 };
