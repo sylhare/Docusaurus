@@ -22,7 +22,7 @@ function friendsPlugin(context, options) {
 
       // Add the '/friends' routes, and ensure it receives the friends props
       addRoute({
-        path: '/friends',
+        path: '/Docusaurus/friends',
         component: '@site/src/components/Friend',
         modules: {
           // propName -> JSON file path
