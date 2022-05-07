@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[9065],{819:function(e){e.exports=JSON.parse('{"plugin":{"name":"docusaurus-friend-plugin","id":"default"}}')}}]);
