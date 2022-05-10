@@ -4,7 +4,7 @@ To test docusaurus
 
 ## Get started
 
-```shell
+```bash
 # create website
 npx create-docusaurus@latest my-website classic --typescript
 
@@ -31,7 +31,7 @@ npm run swizzle @docusaurus/theme-classic -- --typescript
 
 ## Useful links
 
-Docusaurus test site: https://docusaurus.io/tests/docs/category/tests
-Docusaurus plugins: https://docusaurus.io/docs/advanced/plugins
-Docusaurus Client API: https://docusaurus.io/docs/docusaurus-core#link
-Infima (Docusaurus theme): https://infima.dev/docs/components/badge
+- Docusaurus test site: https://docusaurus.io/tests/docs/category/tests
+- Docusaurus plugins: https://docusaurus.io/docs/advanced/plugins
+- Docusaurus Client API: https://docusaurus.io/docs/docusaurus-core#link
+- Infima (Docusaurus theme): https://infima.dev/docs/components/badge
